@@ -1,5 +1,10 @@
-<%= form_for @shout do |form| %>
-	<%= form.text_field :body, placeholder: "SHOUT HERE!" %>
+<%= form_for @text_shout do |form| %>
+	<%= form.text_field :body, placeholder: "SHOUT HERE!", required: true %>
+	<%= form.submit "Shout!" %>
+<% end %>
+
+<%= form_for @photo_shout, html: { multipart: true } do |form| %>
+	<%= form.file_field :image %>
 	<%= form.submit "Shout!" %>
 <% end %>
 

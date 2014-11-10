@@ -5,6 +5,8 @@ gem 'sqlite3'
 
 gem 'monban'
 gem 'monban-generators'
+gem 'paperclip', '~> 4.2'
+
 
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
